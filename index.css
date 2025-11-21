@@ -69,13 +69,13 @@ form{
 
 .wrapper {
   position: relative;
-  width: 300px; /* of wat je wilt */
+  width: 300px; 
 }
 
 .email {
   margin-left: 90px;
   width: 50%;
-  padding-right: 50px; /* ruimte voor de knop */
+  padding-right: 50px; 
   height: 40px;
   border-radius: 20px;
   border: 1px solid #ccc;

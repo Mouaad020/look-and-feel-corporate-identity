@@ -1,0 +1,125 @@
+body {
+    font-family: var(--font-family-body);
+}
+
+
+
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .navright {
+        margin-top: 15px;
+
+    }
+}
+
+
+
+h1 {
+    margin-top: 100px;
+    font-size: var(--h1-size);
+
+}
+
+h3 {
+    font-size: var(--h3-size);
+}
+
+.community {
+    width: 250px;
+}
+
+
+
+
+.strik {
+    width: 100%;
+}
+
+
+
+.background {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--background-color-secondary);
+}
+
+.backgroundproducts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: var(--background-color-secondary);
+}
+
+.photo {
+    width: 100%;
+    object-fit: cover;
+}
+
+form{
+    background-color: var(--formcolor);
+}
+
+
+
+.wrapper {
+  position: relative;
+  width: 300px; /* of wat je wilt */
+}
+
+.email {
+  margin-left: 90px;
+  width: 50%;
+  padding-right: 50px; /* ruimte voor de knop */
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.formbutton {
+  position: absolute;
+  left: 245px;
+  top: 40%;
+  transform: translateY(-50%);
+  height: 30px;
+  width: 30px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+
+
+        .footersection {
+            background-color: beige;
+            color: black;
+            padding: 16px;
+        }
+
+.footernavigation {
+
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            margin-right: 100px
+
+
+        }
+
+        
+.legalpages {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: beige;
+            color: black;
+            padding: 16px;
+
+        }
+
+
+

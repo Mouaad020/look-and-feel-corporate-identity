@@ -1,12 +1,21 @@
 body{
     background-color: lightgray;
+    margin: 0;
+    padding: 0;
+}
+
+.headerwrapper{
+    margin: 0;
+    padding: 0;
+    display: block;
 }
 
 
 .navigation{
     position: absolute;
     right: 20px;
-    top: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -14,13 +23,25 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    border: 40px solid white;   
+    background-color: white;   
+    height: 800px;
+    margin: 0;
+
+
+}
+
+.formclass{
+    display: flex;
+    justify-content: center;
 }
 
 form {
+    position: relative;
     display: flex;
     flex-direction: column;
-    margin-left: 500px;
-    margin-top: 50px;
+    justify-content: center;
+    top: 50px;
     border: 80px solid white;   
     background-color: white;
     padding: 20px;            
@@ -39,3 +60,8 @@ form {
     background-color: black;
     color: white;
   }
+
+
+
+
+   

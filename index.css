@@ -1,5 +1,6 @@
 body {
     font-family: var(--font-family-body);
+    margin: 0;
 }
 
 
@@ -17,12 +18,26 @@ nav {
     }
 }
 
+main{
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: max(25em) minmax(0, 100vw);
+        grid-gap: 1.5em;
+    }
+}
+
 
 
 h1 {
     margin-top: 100px;
     font-size: var(--h1-size);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
 
+    @media (min-width: 768px) {
+        justify-content: center;
+    }
 }
 
 h3 {
@@ -31,7 +46,14 @@ h3 {
 
 .community {
     width: 250px;
+
+    @media (min-width: 768px) {
+        /* margin-left: 125px;
+        width: 500px; */
+    }
 }
+
+
 
 
 
@@ -45,81 +67,134 @@ h3 {
 .background {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     background-color: var(--background-color-secondary);
+    position: relative;
+
+    .filter {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+
 }
+
 
 .backgroundproducts {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     background-color: var(--background-color-secondary);
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .photo {
     width: 100%;
     object-fit: cover;
+
+    @media (min-width: 768px) {
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
-form{
+form {
     background-color: var(--formcolor);
+
 }
 
 
 
 .wrapper {
-  position: relative;
-  width: 300px; 
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+
+
+
+    @media (min-width: 768px) {
+        width: 50%;
+    }
 }
 
 .email {
-  margin-left: 90px;
-  width: 50%;
-  padding-right: 50px; 
-  height: 40px;
-  border-radius: 20px;
-  border: 1px solid #ccc;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+
+
+    @media (min-width: 768px) {}
 }
 
 .formbutton {
-  position: absolute;
-  left: 245px;
-  top: 40%;
-  transform: translateY(-50%);
-  height: 30px;
-  width: 30px;
-  border: none;
-  background: none;
-  cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    aspect-ratio: 1/1;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0;
 }
 
 
 
-        .footersection {
-            background-color: beige;
-            color: black;
-            padding: 16px;
-        }
+.footersection {
+    background-color: beige;
+    color: black;
+
+
+    @media (min-width: 768px) {
+
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+}
 
 .footernavigation {
 
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 10px;
-            margin-right: 100px
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    margin: 0;
+
+    @media (min-width: 768px) {
+
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
 
 
-        }
-
-        
 .legalpages {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            background-color: beige;
-            color: black;
-            padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: beige;
+    color: black;
+    padding: 16px;
+    padding-bottom: 0;
+    margin: 0;
 
-        }
+    @media (min-width: 768px) {
 
+        grid-template-columns: repeat(6, 1fr);
 
+    }
 
+}
+
+.legal {
+    @media (min-width: 768px) {
+
+        margin-left: 2rem;
+
+    }
+
+}

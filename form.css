@@ -1,35 +1,41 @@
 body{
-    background-color: lightgray;
+    font-family: parkinsans;
+    background-color: var(--background-color-secondary);
     margin: 0;
     padding: 0;
 }
 
-.headerwrapper{
-    margin: 0;
-    padding: 0;
-    display: block;
-}
 
+header{
+    position: relative;
+    z-index: 5;
+}
 
 .navigation{
-    position: absolute;
-    right: 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;        
     margin: 0;
     padding: 0;
+    z-index: 10;    
 }
+
 
 
 nav{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    border: 40px solid white;   
-    background-color: white;   
-    height: 800px;
-    margin: 0;
+    border-left: 40px solid white; 
+    background-color: white;
+    height: 100%;         
+    padding: 20px;
 
 
 }
+
+
 
 .formclass{
     display: flex;
@@ -50,9 +56,6 @@ form {
     gap: 10px;                
   }
 
-  img{
-    width: 200px;
-  }
 
   button{
     border-radius: 10px;
@@ -61,6 +64,29 @@ form {
     color: white;
   }
 
+
+
+  .images{
+    position: relative;
+    top: 10px;
+}
+
+
+  .profiel{
+    position: absolute;
+    right: 17em;
+    bottom: 20em;
+    width: 150px;
+
+  }
+
+.potlood{
+    position: absolute;
+    bottom: 21em;
+    left: 2em;
+    width: 25px;
+
+}
 
 
 

@@ -40,7 +40,7 @@ nav{
 .formclass{
     display: flex;
     justify-content: center;
-}
+
 
 form {
     position: relative;
@@ -87,7 +87,7 @@ form {
     width: 25px;
 
 }
-
+}
 
 
    

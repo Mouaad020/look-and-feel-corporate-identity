@@ -1,6 +1,8 @@
+
 body {
     font-family: parkinsans;
     margin: 0;
+    padding: 0;
 }
 
 
@@ -175,7 +177,7 @@ main {
             transform: translateY(-50%);
         }
 
-        h3 {
+        h2 {
             font-size: var(--h3-size);
             line-height: 16px;
         }
@@ -188,6 +190,9 @@ main {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         background-color: var(--background-color-secondary);
+        list-style: none;
+             padding: 0;
+             margin: 0;
 
         @media (min-width: 1024px) {
             grid-template-columns: repeat(3, 1fr);
@@ -295,13 +300,13 @@ footer {
 
     ul {
         padding: 0;
+       
     }
 
 
     @media (min-width: 768px) {
         grid-template-columns: repeat(6, 1fr);
-        position: relative;
-        left: 10em;
+        
     }
 
     .titel-list {
